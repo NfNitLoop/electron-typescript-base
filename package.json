@@ -1,0 +1,26 @@
+{
+  "name": "base",
+  "version": "0.0.1",
+  "description": "Base electron/TypeScript project.",
+  "main": "js/main.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build": "tsc",
+    "prepublish:comment": "Prepublish gets run on `npm install`",
+    "prepublish": "typings install && node run build",
+    "clean": "rm -rf js",
+    "clean_all": "npm run clean && rm -rf node_modules typings",
+    "start": "electron ."
+  },
+  "keywords": [
+    "electron",
+    "typescript"
+  ],
+  "author": "Cody Casterline",
+  "license": "MIT",
+  "devDependencies": {
+    "electron-prebuilt": "^1.3.3",
+    "typescript": "^1.8.10",
+    "typings": "^1.3.2"
+  }
+}

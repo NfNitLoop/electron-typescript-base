@@ -1,0 +1,7 @@
+# Build dependencies: 
+/node_modules/
+/typings/
+
+# TypeScript build results go here:
+/js/
+
