@@ -7,7 +7,7 @@
     "test": "echo \"Error: no test specified\" && exit 1",
     "build": "tsc",
     "prepublish:comment": "Prepublish gets run on `npm install`",
-    "prepublish": "typings install && node run build",
+    "prepublish": "typings install && npm run build",
     "clean": "rm -rf js",
     "clean_all": "npm run clean && rm -rf node_modules typings",
     "start": "electron ."
