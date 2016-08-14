@@ -3,10 +3,13 @@ Electron / TypeScript base application
 
 This is meant as a starting point to writing an Electron application using TypeScript. Clone it, and you can start writing TypeScript 
 
-Here's what it handles for you: 
+Here's what it handles for you:
  * npm package configuration in [package.json] which installs all dependencies (dev & production) with `npm install`.
- * [Configuration][typings.json] for [typings] to make TypeScript aware of Node and Electron types.
  * bare-bones hello-world interface showing Node access in Electron.
+
+Note: This branch now uses TypeScript 2.0, which can make use of type definition
+files in the npm `@types` namespace automatically. If you want to stick with
+TypeScript 1.8, see the `typescript-1.8` branch.
 
 Running
 -------
